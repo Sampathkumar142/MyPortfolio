@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Brush Script MT', cursive ;
+    
+}
+
+
+
+
+/* nav bar styling  */
+.navigation-bar{
+    background-color: #160a2b;
+    height: 10vh;
+}
+
+.logo{
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    color: aliceblue;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    font-size: medium;
+    background-color: #160a2b;
+
+}
+.end-nav{
+    display: flex;
+    position: absolute;
+    right: 2rem ;
+}
+
+.nav .nav-list{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nav li {
+    padding: 0.5rem 1rem;
+    list-style: none;
+}
+.nav li a{
+    padding: 10px;
+    text-decoration: none;
+
+    color: aliceblue;
+}
+
+.nav li a:hover{
+    color: blueviolet;
+
+}
+.nav li{
+    list-style: none;
+}
+
+.cv-button{
+    /* position: absolute; */
+    /* right: 2rem; */
+    padding: 10px 20px ;
+    margin: 3px;
+
+}
+
+
+#cv-btn{
+    border: 0.3px solid #e8dfdf;
+    /* border-radius: 20%; */
+    padding: 10px 15px;
+    font-size:12px;
+    width: 120px;
+}
+.cv-button,
+.cv-button button {
+    cursor: pointer;
+}
+
+/* Additional styles to enhance the appearance of the button */
+.cv-button button {
+    background-color: inherit;
+    color: #fff;
+    /* border: none; */
+    /* padding: 10px 20px; */
+    border-radius: 25px;
+    text-decoration: none;
+    /* transition: background-color 0.3s ease; */
+}
+
+.cv-button button:hover {
+    color: blueviolet;
+}
+
+.icon {
+    display: none;
+}
+
+
+
+
+@media (max-width:678px) {
+    .nav-bar{
+        width: 100vw;
+        display: flex;
+        align-items: end;
+    }
+    .inactive{
+        display: none;
+
+    }
+    .active{
+        display: flex;
+    }
+    .end-nav{
+        flex-direction: column;
+        align-items: center;
+        background-color:#160a2b;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top:0;
+    }
+    .nav .nav-list{
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav li a  {
+        font-size: 14px;
+    }
+    .nav li a:hover{
+        color: blue;
+    
+    }
+    .nav li{
+        padding: 1rem;
+    }
+   
+    .icon{
+        display:block;
+    }
+    .icon {
+        position: absolute ;
+        top: 1rem;
+        right: 1rem;
+        padding: 0;
+        margin: 0;
+        height: 1.5rem;
+    }
+    .icon img{
+        width: 60px;
+        height: 30px;
+    }
+}
+
+/* Nav bar styling end */
+
+
+/*main section*/
+
+.main{
+    width: 100vw;
+    height: 90vh;
+    color: white;
+}
+.container{
+    /* background-image:url(images/PRAVEEN.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    background-color:#160a2b ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.intro1{
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.intro1 p{
+      padding: 5px 0;
+}
+.intro1 h2{
+    padding-top: 10px;
+}
+.intro2{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.intro2 a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.intro2 p{
+    padding-top: 15px;
+}
+
+.intro3{
+    margin-top: 3rem;
+    margin-left: -0.5rem;
+}
+.intro3 div{
+    display: flex;
+    flex-direction: row;
+}
+.intro3 span {
+    margin: 0 30px;
+}
+.intro3 span img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+@media (max-width:678px) {
+     .intro1{
+        margin-top: 6rem;
+    }
+    .intro1 p{
+        font-size: 0.8rem;
+    }.intro1 h2{
+        font-size: 1rem;
+    }
+    .intro2 a{
+        font-size: 0.7rem;
+    }
+    .intro2 p{
+        font-size: 0.6rem;
+    }
+
+}
